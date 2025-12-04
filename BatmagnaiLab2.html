@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule for Enkhzaya – EBatmagnai – Fall Quarter, 2025</title>
+  <link rel="stylesheet" href="styleLab2.css">
+</head>
+<body>
+<dl>
+    <dt>How to define a table?</dt>
+    <dd>A table is defined in HTML using the <code>&lt;table&gt;</code>element. It's used to display data in a grid format with rows and columns, similar to a spreadsheet.</dd>
+
+    <dt>When to use the following HTML elements:</dt>
+    <dd>
+        <ul>
+            <li><strong><code>&lt;tr&gt;</code></strong>: Table Row. Used to define a single horizontal row of cells in a table.</li>
+            <li><strong><code>&lt;th&gt;</code></strong>: Table Header. Used for table header cells; text is typically rendered as bold and centered.</li>
+            <li><strong><code>&lt;td&gt;</code></strong>: Table Data. Used for standard data cells within a table row.</li>
+            <li><strong><code>&lt;thead&gt;</code></strong>: Table Head. A container for all the header rows (<code>&lt;tr&gt;</code> elements with <code>&lt;th&gt;</code> cells) at the top of the table.</li>
+            <li><strong><code>&lt;tfoot&gt;</code></strong>: Table Foot. A container for content (like summaries or totals) that should logically appear at the bottom of the table.</li>
+            <li><strong><code>&lt;caption&gt;</code></strong>: Table Caption. Provides a descriptive title or explanation for the table, usually displayed above it.</li>
+        </ul>
+    </dd>
+
+    <dt>What is the difference between colspan and rowspan?</dt>
+    <dd>
+        These are attributes used inside <code>&lt;th&gt;</code> or <code>&lt;td&gt;</code> tags to merge cells:
+        <ul>
+            <li><strong><code>colspan</code></strong>: Specifies how many columns a cell should span (merge horizontally).</li>
+            <li><strong><code>rowspan</code></strong>: Specifies how many rows a single cell should span (merge vertically).</li>
+        </ul>
+    </dd>
+
+    <dt>What is the difference between cell spacing and padding?</dt>
+    <dd>
+        <ul>
+            <li><strong>Cell Padding (CSS <code>padding</code>)</strong>: The space inside a cell, between the content and the cell's border.</li>
+            <li><strong>Cell Spacing (HTML <code>cellspacing</code> or CSS <code>border-spacing</code>)</strong>: The space between the individual cells (borders) of a table.</li>
+        </ul>
+    </dd>
+    
+    <dt>How do you define table borders using CSS?</dt>
+    <dd>
+        You define the border on the table element and its cells, typically using the <code>border</code> property: 
+        <code>table, th, td { border: 1px solid black; }</code>. You can also use <code>border-collapse: collapse;</code> to remove the space between cell borders.
+    </dd>
+
+    <dt>How do you control border widths using CSS?</dt>
+    <dd>
+        The border width is controlled by the first value in the <code>border</code> shorthand property (e.g., the <code>1px</code> in <code>border: 1px solid black;</code>) or by using the specific property <code>border-width</code>:
+        <code>border-width: 2px;</code>
+    </dd>
+</dl>
+<hr>  
+  <table border="1">
+    <caption>My Fall Quarter 2025 Class and Activity Schedule</caption>
+
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th> 
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr>
+        <td>9-10</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>10-11</td>
+        <td><a href="https://catalog.ucsd.edu/courses/USP.html">USP 2 Lecture</a></td>
+        <td></td>
+        <td><a href="https://catalog.ucsd.edu/courses/USP.html">USP 2 Lecture</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>11-12</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>12-1</td>
+        <td><a href="https://catalog.ucsd.edu/courses/POLI.html">POLI 30D Lecture</a></td>
+        <td></td>
+        <td><a href="https://catalog.ucsd.edu/courses/POLI.html">POLI 30D Lecture</a></td>
+        <td><a href="https://catalog.ucsd.edu/courses/POLI.html">COGS 3 Discussion</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>1-2</td>
+        <td></td>
+        <td><a href="https://catalog.ucsd.edu/courses/COGS.html">COGS 3 Lecture</a></td>
+        <td><a href="https://catalog.ucsd.edu/courses/USP.html">USP 2 Discussion</a></td>
+        <td><a href="https://catalog.ucsd.edu/courses/COGS.html">COGS 3 Lecture</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      
+      <tr>
+        <td>2-3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      
+      <tr>
+        <td>3-4</td>
+        <td><a href="https://literature.ucsd.edu/languages/korean.html">LTKO 2A Lecture</a></td>
+        <td><a href="https://literature.ucsd.edu/languages/korean.html">LTKO 2A Discussion</a></td>
+        <td><a href="https://literature.ucsd.edu/languages/korean.html">LTKO 2A Lecture</a></td>
+        <td><a href="https://literature.ucsd.edu/languages/korean.html">LTKO 2A Discussion</a></td>
+        <td><a href="https://literature.ucsd.edu/languages/korean.html">LTKO 2A Lecture</a></td>
+        <td></td>
+        <td></td>
+      </tr>
+      
+      <tr>
+        <td>4-5</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>5-6</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>6-7</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>7-8</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>8-9</td>
+        <td></td>
+        <td></td>
+        <td rowspan="3">
+          <img src="images/badminton.png" 
+               alt="Badminton racket and shuttlecock" 
+               style="width: 80px; height: auto;">
+          <br>
+          <a href="https://recreation.ucsd.edu/competitive-sports/badminton/">Badminton Club (8-11 PM)</a>
+        </td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td rowspan="3">
+          <img src="images/badminton.png" 
+               alt="Badminton racket and shuttlecock" 
+               style="width: 80px; height: auto;">
+          <br>
+          <a href="https://recreation.ucsd.edu/competitive-sports/badminton/">Badminton Club (8-11 PM)</a>
+        </td>
+      </tr>
+        
+
+      <tr>
+        <td>9-10</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+      
+      <tr>
+        <td>10-11</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+</html>
