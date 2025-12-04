@@ -1,0 +1,173 @@
+/* --- Global Styling --- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+    /* FINAL FIX: Ensure all body text defaults to black for visibility */
+    color: #000; 
+}
+
+/* --- Reusable Headings / Text Styles --- */
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.big-heading {
+    font-weight: 900;
+    font-size: 3.5rem; 
+    line-height: 1.5;
+}
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+/* This style keeps descriptions light grey */
+#features p {
+    color: #8f8f8f; 
+}
+
+/* --- Title Section (#title) --- */
+#title {
+    background-color: #8fdbf2; 
+    color: #fff; /* White text for this section's content */
+    text-align: left; 
+    position: relative; 
+}
+
+/* Custom Padding for the Bootstrap fluid container */
+.container-fluid {
+    padding: 3% 15%; 
+}
+
+/* --- Navigation Bar Custom Styling --- */
+.navbar {
+    padding: 0 0 4.5rem; 
+}
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0 18px; 
+}
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* --- Download Buttons Custom Styling --- */
+.download-button {
+    margin: 5% 5% 5% 0; 
+}
+
+/* --- Title Image Custom Styling (iPhone) --- */
+.title-image {
+    width: 60%; 
+    transform: rotate(20deg); 
+    position: absolute; 
+    right: 30%; 
+    top: 100px;
+}
+
+/* --- Features Section (#features) --- */
+#features {
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative; 
+    z-index: 1; 
+}
+
+.feature-box {
+    padding: 5%;
+}
+
+.feature-box h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.icon {
+    color: #ff8a72;
+    margin-bottom: 1rem;
+}
+.icon:hover {
+    color: #8fdbf2; 
+}
+
+
+/* --- Testimonials Section (#testimonials) --- */
+#testimonials {
+    background-color: #8fdbf2;
+    color: #fff; /* White text for this section's content */
+    padding: 0; 
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+.testimonial-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%; 
+    margin: 20px;
+}
+
+/* --- Press Section (#press) --- */
+#press {
+    background-color: #8fdbf2;
+    padding-bottom: 3%;
+}
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* --- Pricing Section (#pricing) --- */
+#pricing {
+    padding: 100px;
+}
+.pricing-column {
+    padding: 3% 2%;
+}
+
+/* --- Call To Action Section (CTA) --- */
+#cta {
+    background-color: #8fdbf2;
+    color: #fff;
+    padding: 7% 15%;
+}
+.cta-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+/* --- Footer Section (#footer) --- */
+#footer {
+    padding: 7% 15%;
+    color: #000; 
+}
+.social-icon {
+    margin: 20px 10px;
+}
+
+/* --- Media Query for Mobile/Tablet Responsiveness (max-width: 1028px) --- */
+@media (max-width: 1028px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        margin: 0 auto;
+    }
+}
