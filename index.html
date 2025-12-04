@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enkhzaya Batmagnai – Portfolio</title>
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #e4f3ff, #f9fcff);
+      color: #1f2933;
+    }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 32px;
+      border-bottom: 2px dashed #bfdbfe;
+      padding-bottom: 18px;
+    }
+
+    .name {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #1d4ed8;
+    }
+
+    nav {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.95rem;
+    }
+
+    .pill {
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      box-shadow: 0 2px 4px rgba(148, 163, 184, 0.3);
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 1.4rem;
+      border-bottom: 2px solid #bfdbfe;
+      padding-bottom: 6px;
+      color: #1d4ed8;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .project-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 16px 18px 14px;
+      border: 1px solid #dbeafe;
+      box-shadow: 0 4px 10px rgba(148, 163, 184, 0.3);
+    }
+
+    .project-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .project-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #1f2937;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid #bfdbfe;
+      background: #eff6ff;
+      color: #1d4ed8;
+      white-space: nowrap;
+    }
+
+    .project-meta {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+
+    .project-desc {
+      font-size: 0.95rem;
+      margin-top: 8px;
+      line-height: 1.4;
+      color: #374151;
+    }
+
+    .project-links {
+      font-size: 0.85rem;
+      margin-top: 8px;
+    }
+
+    .screenshot {
+      margin-top: 10px;
+      border-radius: 12px;
+      border: 1px dashed #bfdbfe;
+      padding: 8px;
+      background: #f1f5f9;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+
+    .screenshot img {
+      max-width: 100%;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto 4px;
+    }
+
+    .resume-link {
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      border-top: 1px solid #dbeafe;
+      padding-top: 10px;
+      text-align: center;
+    }
+
+    @media (min-width: 700px) {
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <header>
+      <div>
+        <div class="name">Enkhzaya Batmagnai</div>
+      </div>
+      <nav>
+        <a href="#projects" class="pill">Projects</a>
+        <a href="#resume" class="pill">Resume</a>
+      </nav>
+    </header>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="projects">
+
+        <!-- HTML Basics Lab (Lab 1) -->
+        <article class="project-card">
+          <div class="project-title-row">
+            <div class="project-title">HTML Basics Lab</div>
+            <span class="tag">HTML</span>
+          </div>
+          <div class="project-meta">Repo: Lab 1 HTML Assignment</div>
+          <p class="project-desc">
+            Intro HTML lab practicing structure, headings, paragraphs, and basic layout.
+          </p>
+          <div class="screenshot">
+            <img src="schedule.png" alt="HTML Basics Screenshot" />
+          </div>
+          <p class="project-links">
+            <a href="https://github.com/COGS3-Introduction-to-Computing/lab1-html-assignment-ebatmagnai" target="_blank">
+              View project on GitHub
+            </a>
+          </p>
+        </article>
+
+        <!-- Coding Tables Lab (Lab 2) -->
+        <article class="project-card">
+          <div class="project-title-row">
+            <div class="project-title">Coding Tables Lab</div>
+            <span class="tag">HTML &amp; CSS</span>
+          </div>
+          <div class="project-meta">Repo: Lab 2 Coding Tables &amp; CSS</div>
+          <p class="project-desc">
+            Lab focused on building tables and using CSS to control alignment,
+            spacing, and visual hierarchy.
+          </p>
+          <div class="screenshot">
+            <img src="column.png" alt="Coding Tables Screenshot" />
+          </div>
+          <p class="project-links">
+            <a href="https://github.com/COGS3-Introduction-to-Computing/lab2-coding-tables-and-css-ebatmagnai" target="_blank">
+              View project on GitHub
+            </a>
+          </p>
+        </article>
+
+        <!-- Study Buddy Lab (Lab 3) -->
+        <article class="project-card">
+          <div class="project-title-row">
+            <div class="project-title">Study Buddy</div>
+            <span class="tag">Bootstrap</span>
+          </div>
+          <div class="project-meta">Repo: Lab 3 StudyBuddy</div>
+          <p class="project-desc">
+            A Study Buddy site built with Bootstrap components to practice layout,
+            grids, and responsive design.
+          </p>
+          <div class="screenshot">
+            <img src="studybuddy.png" alt="Study Buddy Screenshot" />
+          </div>
+          <p class="project-links">
+            <a href="https://github.com/COGS3-Introduction-to-Computing/lab3-studybuddy-ebatmagnai" target="_blank">
+              View project on GitHub
+            </a>
+          </p>
+        </article>
+
+        <!-- Wedding Planner Lab (Lab 6a) -->
+        <article class="project-card">
+          <div class="project-title-row">
+            <div class="project-title">Wedding Planner Lab</div>
+            <span class="tag">JS / Interactive</span>
+          </div>
+          <div class="project-meta">Repo: Lab 6a Wedding Planner</div>
+          <p class="project-desc">
+            A small wedding-planning site using JavaScript to handle calculations
+            and simple interactivity.
+          </p>
+          <div class="screenshot">
+            <img src="weddingplanner.png" alt="Wedding Planner Screenshot" />
+          </div>
+          <p class="project-links">
+            <a href="https://github.com/COGS3-Introduction-to-Computing/lab6a-the-wedding-planner-ebatmagnai" target="_blank">
+              View project on GitHub
+            </a>
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <p class="resume-link">
+        <a href="RESUME.pdf" target="_blank">Download my resume</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Enkhzaya Batmagnai
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
